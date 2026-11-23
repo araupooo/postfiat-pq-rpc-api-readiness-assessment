@@ -1,0 +1,334 @@
+{
+ "pinned_commit": "0085a1ff885d6a446369cf73a4430f75af22be55",
+ "repo": "postfiatd",
+ "excerpts": [
+  {
+   "id": "E01",
+   "file": "src/xrpld/rpc/detail/Handler.cpp",
+   "start_line": 84,
+   "end_line": 87,
+   "anchor": "account_info",
+   "purpose": "handlerArray: request-response table opens; account_info registered as Role::USER"
+  },
+  {
+   "id": "E02",
+   "file": "src/xrpld/rpc/detail/Handler.cpp",
+   "start_line": 170,
+   "end_line": 176,
+   "anchor": "byRef(&doSign)",
+   "purpose": "handlerArray: sign, sign_for, simulate, submit, submit_multisigned registrations"
+  },
+  {
+   "id": "E03",
+   "file": "src/xrpld/rpc/detail/Handler.cpp",
+   "start_line": 183,
+   "end_line": 187,
+   "anchor": "doValidationCreate",
+   "purpose": "handlerArray: validation_create registration (Role::ADMIN, multi-line entry)"
+  },
+  {
+   "id": "E04",
+   "file": "src/xrpld/rpc/detail/Handler.cpp",
+   "start_line": 196,
+   "end_line": 199,
+   "anchor": "doWalletPropose",
+   "purpose": "handlerArray: wallet_propose (ADMIN) plus evented subscribe/unsubscribe"
+  },
+  {
+   "id": "E05",
+   "file": "src/xrpld/rpc/detail/Handler.cpp",
+   "start_line": 133,
+   "end_line": 136,
+   "anchor": "doLedgerHeader",
+   "purpose": "handlerArray: ledger_header pinned to API version 1,1 plus ledger_request"
+  },
+  {
+   "id": "E06",
+   "file": "src/xrpld/rpc/detail/Handler.cpp",
+   "start_line": 146,
+   "end_line": 150,
+   "anchor": "doProfile",
+   "purpose": "handlerArray: profile handler commented out \u2014 declared surface that is not registered"
+  },
+  {
+   "id": "E07",
+   "file": "src/xrpld/rpc/detail/Handler.cpp",
+   "start_line": 246,
+   "end_line": 250,
+   "anchor": "addHandler<LedgerHandler>",
+   "purpose": "HandlerTable constructor: new-style handlers LedgerHandler and VersionHandler added"
+  },
+  {
+   "id": "E08",
+   "file": "src/xrpld/rpc/handlers/LedgerHandler.h",
+   "start_line": 51,
+   "end_line": 75,
+   "anchor": "static constexpr char name[] = \"ledger\";",
+   "purpose": "LedgerHandler class: name ledger, Role::USER, NO_CONDITION, full API version range"
+  },
+  {
+   "id": "E09",
+   "file": "src/xrpld/rpc/handlers/Version.h",
+   "start_line": 28,
+   "end_line": 64,
+   "anchor": "static constexpr char const* name = \"version\";",
+   "purpose": "VersionHandler class: name version, Role::USER, NO_CONDITION, full API version range"
+  },
+  {
+   "id": "E10",
+   "file": "src/xrpld/rpc/detail/TransactionSign.cpp",
+   "start_line": 670,
+   "end_line": 686,
+   "anchor": "ripple::sign(pk, sk, s.slice())",
+   "purpose": "transactionSign signing path: ripple::sign with supplied secret key, then stTx->sign"
+  },
+  {
+   "id": "E11",
+   "file": "src/xrpld/rpc/detail/TransactionSign.cpp",
+   "start_line": 998,
+   "end_line": 1010,
+   "anchor": "transactionSign(",
+   "purpose": "transactionSign function definition (sign handler entry point)"
+  },
+  {
+   "id": "E12",
+   "file": "src/xrpld/rpc/detail/TransactionSign.cpp",
+   "start_line": 1166,
+   "end_line": 1180,
+   "anchor": "transactionSignFor(",
+   "purpose": "transactionSignFor function definition (sign_for handler entry point)"
+  },
+  {
+   "id": "E13",
+   "file": "src/xrpld/rpc/detail/TransactionSign.cpp",
+   "start_line": 1282,
+   "end_line": 1295,
+   "anchor": "transactionSubmitMultiSigned(",
+   "purpose": "transactionSubmitMultiSigned function definition (submit_multisigned entry point)"
+  },
+  {
+   "id": "E14",
+   "file": "src/libxrpl/protocol/STTx.cpp",
+   "start_line": 259,
+   "end_line": 295,
+   "anchor": "STTx::checkSign(",
+   "purpose": "STTx::checkSign: signature verification for submitted/simulated transactions"
+  },
+  {
+   "id": "E15",
+   "file": "src/xrpld/rpc/handlers/PayChanClaim.cpp",
+   "start_line": 85,
+   "end_line": 100,
+   "anchor": "sign(pk, sk, msg.slice())",
+   "purpose": "channel_authorize: signs a payment-channel claim with the supplied secret key"
+  },
+  {
+   "id": "E16",
+   "file": "src/xrpld/rpc/handlers/PayChanClaim.cpp",
+   "start_line": 155,
+   "end_line": 164,
+   "anchor": "verify(*pk, msg.slice()",
+   "purpose": "channel_verify: verifies a payment-channel claim signature"
+  },
+  {
+   "id": "E17",
+   "file": "src/xrpld/rpc/handlers/ValidationCreate.cpp",
+   "start_line": 44,
+   "end_line": 66,
+   "anchor": "generateSecretKey(KeyType::secp256k1, *seed)",
+   "purpose": "validation_create: generates a secp256k1 validator key pair and returns private key, seed and public key"
+  },
+  {
+   "id": "E18",
+   "file": "src/xrpld/rpc/handlers/WalletPropose.cpp",
+   "start_line": 130,
+   "end_line": 145,
+   "anchor": "generateKeyPair(*keyType, *seed)",
+   "purpose": "wallet_propose: generates an account key pair from a seed (default secp256k1) and returns seed material"
+  },
+  {
+   "id": "E19",
+   "file": "src/xrpld/rpc/handlers/DoManifest.cpp",
+   "start_line": 30,
+   "end_line": 65,
+   "anchor": "parseBase58<PublicKey>(TokenType::NodePublic, requested)",
+   "purpose": "manifest: returns the signed validator manifest for a node public key"
+  },
+  {
+   "id": "E20",
+   "file": "src/xrpld/overlay/detail/Handshake.cpp",
+   "start_line": 195,
+   "end_line": 210,
+   "anchor": "signDigest(",
+   "purpose": "peer handshake: session signature over a shared value with the node secp256k1 identity key"
+  },
+  {
+   "id": "E21",
+   "file": "src/xrpld/overlay/detail/Handshake.cpp",
+   "start_line": 310,
+   "end_line": 322,
+   "anchor": "verifyDigest(publicKey, sharedValue",
+   "purpose": "peer handshake: verifies the remote session signature"
+  },
+  {
+   "id": "E22",
+   "file": "include/xrpl/protocol/digest.h",
+   "start_line": 218,
+   "end_line": 245,
+   "anchor": "sha512Half(Args const&... args)",
+   "purpose": "sha512Half and sha512Half_s definitions: SHA-512-Half over hashed arguments"
+  },
+  {
+   "id": "E23",
+   "file": "include/xrpl/protocol/KeyType.h",
+   "start_line": 25,
+   "end_line": 55,
+   "anchor": "ed25519 = 1,",
+   "purpose": "KeyType enum: secp256k1 = 0, ed25519 = 1, plus to_string mapping"
+  },
+  {
+   "id": "E24",
+   "file": "src/libxrpl/protocol/PublicKey.cpp",
+   "start_line": 225,
+   "end_line": 245,
+   "anchor": "verifyDigest(",
+   "purpose": "PublicKey: publicKeyType dispatch and verifyDigest (secp256k1 ECDSA verification)"
+  },
+  {
+   "id": "E25",
+   "file": "src/libxrpl/protocol/PublicKey.cpp",
+   "start_line": 295,
+   "end_line": 310,
+   "anchor": "ed25519Canonical(sig)",
+   "purpose": "PublicKey: Ed25519 signature verification with canonical-signature check"
+  },
+  {
+   "id": "E26",
+   "file": "src/libxrpl/basics/make_SSLContext.cpp",
+   "start_line": 90,
+   "end_line": 106,
+   "anchor": "TLSv1.2:!CBC:!DSS:!PSK:!eNULL:!aNULL",
+   "purpose": "default TLS cipher list: TLSv1.2 only, no PQ or hybrid key exchange configured"
+  },
+  {
+   "id": "E27",
+   "file": "src/libxrpl/basics/make_SSLContext.cpp",
+   "start_line": 347,
+   "end_line": 376,
+   "anchor": "SSL_CTX_set_cipher_list",
+   "purpose": "get_context: cipher list applied to the OpenSSL context; TLS delegated to OpenSSL"
+  },
+  {
+   "id": "E28",
+   "file": "include/xrpl/protocol/STValidation.h",
+   "start_line": 90,
+   "end_line": 102,
+   "anchor": "Construct, sign and trust a new STValidation",
+   "purpose": "STValidation constructor: construct, sign and trust a validation issued by this node"
+  },
+  {
+   "id": "E29",
+   "file": "src/xrpld/rpc/handlers/LedgerData.cpp",
+   "start_line": 75,
+   "end_line": 85,
+   "anchor": "lpLedger->info().hash",
+   "purpose": "ledger_data: returns the selected ledger's hash"
+  },
+  {
+   "id": "E30",
+   "file": "src/xrpld/rpc/handlers/Tx.cpp",
+   "start_line": 44,
+   "end_line": 56,
+   "anchor": "getHashBySeq(seq) == hash",
+   "purpose": "tx: isValidated compares the requested hash against the ledger hash-by-sequence record"
+  },
+  {
+   "id": "E31",
+   "file": "src/xrpld/rpc/GRPCHandlers.h",
+   "start_line": 36,
+   "end_line": 56,
+   "anchor": "doLedgerGrpc",
+   "purpose": "gRPC surface: GetLedger, GetLedgerEntry, GetLedgerData, GetLedgerDiff handler declarations"
+  },
+  {
+   "id": "E32",
+   "file": "src/libxrpl/protocol/Indexes.cpp",
+   "start_line": 105,
+   "end_line": 115,
+   "anchor": "sha512Half(safe_cast",
+   "purpose": "Indexes: ledger entry indexes are sha512Half values"
+  },
+  {
+   "id": "E33",
+   "file": "src/xrpld/rpc/handlers/Random.cpp",
+   "start_line": 36,
+   "end_line": 50,
+   "anchor": "doRandom",
+   "purpose": "random: returns a random uint256; no key, signature or ledger-hash operation"
+  },
+  {
+   "id": "E34",
+   "file": "src/xrpld/rpc/handlers/Handlers.h",
+   "start_line": 108,
+   "end_line": 122,
+   "anchor": "doPause",
+   "purpose": "Handlers.h: doPause and doResume declared but never registered in the handler table"
+  },
+  {
+   "id": "E35",
+   "file": "src/xrpld/rpc/handlers/Submit.cpp",
+   "start_line": 64,
+   "end_line": 72,
+   "anchor": "Signing support in the 'submit' command",
+   "purpose": "submit: inline signing deprecated; submit takes a signed tx_blob"
+  },
+  {
+   "id": "E36",
+   "file": "src/xrpld/rpc/handlers/Simulate.cpp",
+   "start_line": 225,
+   "end_line": 232,
+   "anchor": "getTxQ().apply(",
+   "purpose": "simulate: executes the supplied transaction through the standard TxQ apply path"
+  },
+  {
+   "id": "E37",
+   "file": "include/xrpl/protocol/ApiVersion.h",
+   "start_line": 56,
+   "end_line": 63,
+   "anchor": "apiMaximumSupportedVersion = apiVersion<2>;",
+   "purpose": "API versions: min supported 1, max supported 2, beta 3, max valid 3 \u2014 the default 1-3 range for handler entries"
+  },
+  {
+   "id": "E38",
+   "file": "src/xrpld/core/Config.h",
+   "start_line": 362,
+   "end_line": 368,
+   "anchor": "canSign() const",
+   "purpose": "canSign() gate: sign/sign_for/channel_authorize/submit signing path require signingEnabled_ for non-ADMIN callers"
+  },
+  {
+   "id": "E39",
+   "file": "src/xrpld/rpc/detail/RPCHandler.cpp",
+   "start_line": 222,
+   "end_line": 230,
+   "anchor": "doCommand(RPC::JsonContext& context",
+   "purpose": "doCommand: dispatcher entry \u2014 fillHandler resolves the method, then invokes the handler"
+  },
+  {
+   "id": "E40",
+   "file": "src/xrpld/app/main/GRPCServer.cpp",
+   "start_line": 488,
+   "end_line": 498,
+   "anchor": "doLedgerGrpc",
+   "purpose": "gRPC registration: GetLedger bound to doLedgerGrpc in XRPLedgerAPIService"
+  },
+  {
+   "id": "E41",
+   "file": "src/xrpld/rpc/handlers/Simulate.cpp",
+   "start_line": 124,
+   "end_line": 139,
+   "anchor": "rpcTX_SIGNED",
+   "purpose": "simulate: rejects signed input (non-empty TxnSignature or signer signature returns rpcTX_SIGNED)"
+  }
+ ]
+}
