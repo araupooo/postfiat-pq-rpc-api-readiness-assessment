@@ -1,0 +1,31 @@
+# Source excerpt E17 — postfiatd 0085a1ff885d6a446369cf73a4430f75af22be55.
+# File: src/xrpld/rpc/handlers/ValidationCreate.cpp, lines 44-66.
+# Line numbers verified with grep -n on a local checkout of the pinned commit.
+# Source file SHA-256: 307df807b76a898f4cc99a7fa32924374fdeca2aa77a10a95b27ce48692d73df
+# Source file git blob SHA: 6690e7f284dfac5a092fdd3b4aae8eec19ebcbaf
+# Source file size: 2250 bytes
+
+# --- src/xrpld/rpc/handlers/ValidationCreate.cpp lines 44-66 ---
+Json::Value
+doValidationCreate(RPC::JsonContext& context)
+{
+    Json::Value obj(Json::objectValue);
+
+    auto seed = validationSeed(context.params);
+
+    if (!seed)
+        return rpcError(rpcBAD_SEED);
+
+    auto const private_key = generateSecretKey(KeyType::secp256k1, *seed);
+
+    obj[jss::validation_public_key] = toBase58(
+        TokenType::NodePublic,
+        derivePublicKey(KeyType::secp256k1, private_key));
+
+    obj[jss::validation_private_key] =
+        toBase58(TokenType::NodePrivate, private_key);
+
+    obj[jss::validation_seed] = toBase58(*seed);
+    obj[jss::validation_key] = seedAs1751(*seed);
+
+    return obj;

@@ -1,0 +1,22 @@
+# Source excerpt E13 — postfiatd 0085a1ff885d6a446369cf73a4430f75af22be55.
+# File: src/xrpld/rpc/detail/TransactionSign.cpp, lines 1282-1295.
+# Line numbers verified with grep -n on a local checkout of the pinned commit.
+# Source file SHA-256: 7dc4a628586808f8837926d930a45f17e8051709c8a00def33e446cd54ba07a0
+# Source file git blob SHA: 17c97e48486bdb48a4eeeff37faa8e96d6b33c33
+# Source file size: 45888 bytes
+
+# --- src/xrpld/rpc/detail/TransactionSign.cpp lines 1282-1295 ---
+transactionSubmitMultiSigned(
+    Json::Value jvRequest,
+    unsigned apiVersion,
+    NetworkOPs::FailHard failType,
+    Role role,
+    std::chrono::seconds validatedLedgerAge,
+    Application& app,
+    ProcessTransactionFn const& processTransaction)
+{
+    auto const& ledger = app.openLedger().current();
+    auto j = app.journal("RPCHandler");
+    JLOG(j.debug()) << "transactionSubmitMultiSigned: " << jvRequest;
+
+    // When multi-signing, the "Sequence" and "SigningPubKey" fields must

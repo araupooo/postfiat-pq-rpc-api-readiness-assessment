@@ -1,0 +1,44 @@
+# Source excerpt E19 — postfiatd 0085a1ff885d6a446369cf73a4430f75af22be55.
+# File: src/xrpld/rpc/handlers/DoManifest.cpp, lines 30-65.
+# Line numbers verified with grep -n on a local checkout of the pinned commit.
+# Source file SHA-256: 4fb5a36ae115638e9adfdb883b6783cf08a035211771566863e3a74aa5a79b8d
+# Source file git blob SHA: 4d783c1d3bb4514b7afae28e915aa7970bf2d818
+# Source file size: 2766 bytes
+
+# --- src/xrpld/rpc/handlers/DoManifest.cpp lines 30-65 ---
+doManifest(RPC::JsonContext& context)
+{
+    auto& params = context.params;
+
+    if (!params.isMember(jss::public_key))
+        return RPC::missing_field_error(jss::public_key);
+
+    auto const requested = params[jss::public_key].asString();
+
+    Json::Value ret;
+    ret[jss::requested] = requested;
+
+    auto const pk = parseBase58<PublicKey>(TokenType::NodePublic, requested);
+    if (!pk)
+    {
+        RPC::inject_error(rpcINVALID_PARAMS, ret);
+        return ret;
+    }
+
+    // first attempt to use params as ephemeral key,
+    // if this lookup succeeds master key will be returned,
+    // else an unseated optional is returned
+    auto const mk = context.app.validatorManifests().getMasterKey(*pk);
+
+    auto const ek = context.app.validatorManifests().getSigningKey(mk);
+
+    // if ephemeral key not found, we don't have specified manifest
+    if (!ek)
+        return ret;
+
+    if (auto const manifest = context.app.validatorManifests().getManifest(mk))
+        ret[jss::manifest] = base64_encode(*manifest);
+    Json::Value details;
+
+    details[jss::master_key] = toBase58(TokenType::NodePublic, mk);
+    details[jss::ephemeral_key] = toBase58(TokenType::NodePublic, *ek);

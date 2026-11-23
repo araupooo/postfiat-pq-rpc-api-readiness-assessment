@@ -1,0 +1,45 @@
+# Source excerpt E14 — postfiatd 0085a1ff885d6a446369cf73a4430f75af22be55.
+# File: src/libxrpl/protocol/STTx.cpp, lines 259-295.
+# Line numbers verified with grep -n on a local checkout of the pinned commit.
+# Source file SHA-256: fe99214954f5157a76b8b8b38bee2c61c63a011da5fcc44a12493288ed1458c1
+# Source file git blob SHA: ddbe294e47b4e4f4b7ac8d055ba8de99f7377568
+# Source file size: 26021 bytes
+
+# --- src/libxrpl/protocol/STTx.cpp lines 259-295 ---
+STTx::checkSign(
+    RequireFullyCanonicalSig requireCanonicalSig,
+    Rules const& rules,
+    STObject const& sigObject) const
+{
+    try
+    {
+        // Determine whether we're single- or multi-signing by looking
+        // at the SigningPubKey.  If it's empty we must be
+        // multi-signing.  Otherwise we're single-signing.
+
+        Blob const& signingPubKey = sigObject.getFieldVL(sfSigningPubKey);
+        return signingPubKey.empty()
+            ? checkMultiSign(requireCanonicalSig, rules, sigObject)
+            : checkSingleSign(requireCanonicalSig, sigObject);
+    }
+    catch (std::exception const&)
+    {
+    }
+    return Unexpected("Internal signature check failure.");
+}
+
+Expected<void, std::string>
+STTx::checkSign(
+    RequireFullyCanonicalSig requireCanonicalSig,
+    Rules const& rules) const
+{
+    if (auto const ret = checkSign(requireCanonicalSig, rules, *this); !ret)
+        return ret;
+
+    if (isFieldPresent(sfCounterpartySignature))
+    {
+        auto const counterSig = getFieldObject(sfCounterpartySignature);
+        if (auto const ret = checkSign(requireCanonicalSig, rules, counterSig);
+            !ret)
+            return Unexpected("Counterparty: " + ret.error());
+    }

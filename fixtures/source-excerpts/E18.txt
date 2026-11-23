@@ -1,0 +1,24 @@
+# Source excerpt E18 — postfiatd 0085a1ff885d6a446369cf73a4430f75af22be55.
+# File: src/xrpld/rpc/handlers/WalletPropose.cpp, lines 130-145.
+# Line numbers verified with grep -n on a local checkout of the pinned commit.
+# Source file SHA-256: 094436c2384b9f45709f03ad7ba468029f9ddb621050f6edfd8bba21c8f3e9df
+# Source file git blob SHA: 2c9cadcbbac60a9bcdaa40901a453f79ae85c3a2
+# Source file size: 5691 bytes
+
+# --- src/xrpld/rpc/handlers/WalletPropose.cpp lines 130-145 ---
+        }
+    }
+
+    if (!keyType)
+        keyType = KeyType::secp256k1;
+
+    auto const publicKey = generateKeyPair(*keyType, *seed).first;
+
+    Json::Value obj(Json::objectValue);
+
+    auto const seed1751 = seedAs1751(*seed);
+    auto const seedHex = strHex(*seed);
+    auto const seedBase58 = toBase58(*seed);
+
+    obj[jss::master_seed] = seedBase58;
+    obj[jss::master_seed_hex] = seedHex;

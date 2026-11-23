@@ -1,0 +1,24 @@
+# Source excerpt E15 — postfiatd 0085a1ff885d6a446369cf73a4430f75af22be55.
+# File: src/xrpld/rpc/handlers/PayChanClaim.cpp, lines 85-100.
+# Line numbers verified with grep -n on a local checkout of the pinned commit.
+# Source file SHA-256: e89e95ce4d3325a578b88423fbc6ff456ed93c69026cbc227cd5ba681d3463f7
+# Source file git blob SHA: 6238af3ae3cf09c6eea4a9e24857d97e7ee389d0
+# Source file size: 5431 bytes
+
+# --- src/xrpld/rpc/handlers/PayChanClaim.cpp lines 85-100 ---
+    std::uint64_t const drops = *optDrops;
+
+    Serializer msg;
+    serializePayChanAuthorization(msg, channelId, XRPAmount(drops));
+
+    try
+    {
+        auto const buf = sign(pk, sk, msg.slice());
+        result[jss::signature] = strHex(buf);
+    }
+    catch (std::exception const& ex)
+    {
+        // LCOV_EXCL_START
+        result = RPC::make_error(
+            rpcINTERNAL,
+            "Exception occurred during signing: " + std::string(ex.what()));
