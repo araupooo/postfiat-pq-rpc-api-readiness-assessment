@@ -1,0 +1,24 @@
+# Source excerpt E41 — postfiatd 0085a1ff885d6a446369cf73a4430f75af22be55.
+# File: src/xrpld/rpc/handlers/Simulate.cpp, lines 124-139.
+# Line numbers verified with grep -n on a local checkout of the pinned commit.
+# Source file SHA-256: cc72e14c247a4694825b61d789e6c891f359d8432f254d8a4b6957b41978dce3
+# Source file git blob SHA: 092b0b456271801075e5c55d847165e2f2d6cc2e
+# Source file size: 11770 bytes
+
+# --- src/xrpld/rpc/handlers/Simulate.cpp lines 124-139 ---
+            else if (signer[jss::Signer][jss::TxnSignature] != "")
+            {
+                // Transaction must not be signed
+                return rpcError(rpcTX_SIGNED);
+            }
+        }
+    }
+
+    if (!tx_json.isMember(jss::TxnSignature))
+    {
+        // autofill TxnSignature
+        tx_json[jss::TxnSignature] = "";
+    }
+    else if (tx_json[jss::TxnSignature] != "")
+    {
+        // Transaction must not be signed

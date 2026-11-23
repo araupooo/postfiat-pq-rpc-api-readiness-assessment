@@ -1,0 +1,19 @@
+# Source excerpt E40 — postfiatd 0085a1ff885d6a446369cf73a4430f75af22be55.
+# File: src/xrpld/app/main/GRPCServer.cpp, lines 488-498.
+# Line numbers verified with grep -n on a local checkout of the pinned commit.
+# Source file SHA-256: 8df8c9b26ae6cc2d17ca6a50cd23d589c3068a22f4a72c57664b6e61f74067c9
+# Source file git blob SHA: fd2181813702783f2bb03cfe96e735fcbf7e50da
+# Source file size: 20338 bytes
+
+# --- src/xrpld/app/main/GRPCServer.cpp lines 488-498 ---
+            org::xrpl::rpc::v1::GetLedgerRequest,
+            org::xrpl::rpc::v1::GetLedgerResponse>;
+
+        addToRequests(std::make_shared<cd>(
+            service_,
+            *cq_,
+            app_,
+            &org::xrpl::rpc::v1::XRPLedgerAPIService::AsyncService::
+                RequestGetLedger,
+            doLedgerGrpc,
+            &org::xrpl::rpc::v1::XRPLedgerAPIService::Stub::GetLedger,

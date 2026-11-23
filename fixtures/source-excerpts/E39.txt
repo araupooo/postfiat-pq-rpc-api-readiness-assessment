@@ -1,0 +1,17 @@
+# Source excerpt E39 — postfiatd 0085a1ff885d6a446369cf73a4430f75af22be55.
+# File: src/xrpld/rpc/detail/RPCHandler.cpp, lines 222-230.
+# Line numbers verified with grep -n on a local checkout of the pinned commit.
+# Source file SHA-256: 76959fe95c4cd7a0ebc497d23a4f78135d8562b96eeb2afa17029b27189517c3
+# Source file git blob SHA: b2e4c2c4409320df20d2d46e3793b4093bf46b1f
+# Source file size: 8015 bytes
+
+# --- src/xrpld/rpc/detail/RPCHandler.cpp lines 222-230 ---
+doCommand(RPC::JsonContext& context, Json::Value& result)
+{
+    Handler const* handler = nullptr;
+    if (auto error = fillHandler(context, handler))
+    {
+        inject_error(error, result);
+        return error;
+    }
+

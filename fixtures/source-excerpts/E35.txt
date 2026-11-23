@@ -1,0 +1,17 @@
+# Source excerpt E35 — postfiatd 0085a1ff885d6a446369cf73a4430f75af22be55.
+# File: src/xrpld/rpc/handlers/Submit.cpp, lines 64-72.
+# Line numbers verified with grep -n on a local checkout of the pinned commit.
+# Source file SHA-256: 08028805a77f793603b47e53334aa43782985e42e67e9f8a400a10cc9fa3c048
+# Source file git blob SHA: b0ea437cf121832834748f0907de35e228a6b192
+# Source file size: 6342 bytes
+
+# --- src/xrpld/rpc/handlers/Submit.cpp lines 64-72 ---
+            RPC::getProcessTxnFn(context.netOps));
+
+        ret[jss::deprecated] =
+            "Signing support in the 'submit' command has been "
+            "deprecated and will be removed in a future version "
+            "of the server. Please migrate to a standalone "
+            "signing tool.";
+
+        return ret;

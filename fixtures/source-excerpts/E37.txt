@@ -1,0 +1,16 @@
+# Source excerpt E37 — postfiatd 0085a1ff885d6a446369cf73a4430f75af22be55.
+# File: include/xrpl/protocol/ApiVersion.h, lines 56-63.
+# Line numbers verified with grep -n on a local checkout of the pinned commit.
+# Source file SHA-256: 4c063ebe18aff3a9b45c16e0b7b24e61c113bb6b1df66b60b7721dfa0fe0fdbb
+# Source file git blob SHA: deafafa5130b3af868e2430d4eadc3658003012d
+# Source file size: 4374 bytes
+
+# --- include/xrpl/protocol/ApiVersion.h lines 56-63 ---
+constexpr static auto apiMinimumSupportedVersion = apiVersion<1>;
+constexpr static auto apiMaximumSupportedVersion = apiVersion<2>;
+constexpr static auto apiVersionIfUnspecified = apiVersion<1>;
+constexpr static auto apiCommandLineVersion =
+    apiVersion<1>;  // TODO Bump to 2 later
+constexpr static auto apiBetaVersion = apiVersion<3>;
+constexpr static auto apiMaximumValidVersion = apiBetaVersion;
+

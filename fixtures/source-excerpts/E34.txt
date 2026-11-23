@@ -1,0 +1,23 @@
+# Source excerpt E34 — postfiatd 0085a1ff885d6a446369cf73a4430f75af22be55.
+# File: src/xrpld/rpc/handlers/Handlers.h, lines 108-122.
+# Line numbers verified with grep -n on a local checkout of the pinned commit.
+# Source file SHA-256: 70b84596065d944c7a49ff6ee39d15af0f306f376b738ca2e0b2285be205426a
+# Source file git blob SHA: e6ae870a88deca9896ce238f9510954ef0317e0e
+# Source file size: 4679 bytes
+
+# --- src/xrpld/rpc/handlers/Handlers.h lines 108-122 ---
+doPathFind(RPC::JsonContext&);
+Json::Value
+doPause(RPC::JsonContext&);
+Json::Value
+doPeers(RPC::JsonContext&);
+Json::Value
+doPing(RPC::JsonContext&);
+Json::Value
+doPrint(RPC::JsonContext&);
+Json::Value
+doRandom(RPC::JsonContext&);
+Json::Value
+doResume(RPC::JsonContext&);
+Json::Value
+doPeerReservationsAdd(RPC::JsonContext&);
