@@ -16,6 +16,17 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Check out pinned postfiatd
+        run: |
+          PINNED="0085a1ff885d6a446369cf73a4430f75af22be55"
+          DEST="$HOME/workspace/postfiatd-pin-0085a1f"
+          mkdir -p "$HOME/workspace"
+          git init "$DEST"
+          git -C "$DEST" remote add origin https://github.com/postfiatorg/postfiatd.git
+          git -C "$DEST" fetch --depth 1 origin "$PINNED"
+          git -C "$DEST" checkout FETCH_HEAD
+          git -C "$DEST" rev-parse HEAD
+
       - name: Verify shipped digests
         run: bash scripts/verify_digests.sh
 
