@@ -1,0 +1,12 @@
+# Source excerpt E05 — postfiatd 0085a1ff885d6a446369cf73a4430f75af22be55.
+# File: src/xrpld/rpc/detail/Handler.cpp, lines 133-136.
+# Line numbers verified with grep -n on a local checkout of the pinned commit.
+# Source file SHA-256: fa498f7b2af8e346b89d21edd6b82298174b4faab1c54fb47d2b95214d8b38fb
+# Source file git blob SHA: d0f4f5d95c6091cceacaad56d1e4522291992945
+# Source file size: 12056 bytes
+
+# --- src/xrpld/rpc/detail/Handler.cpp lines 133-136 ---
+    {"ledger_data", byRef(&doLedgerData), Role::USER, NO_CONDITION},
+    {"ledger_entry", byRef(&doLedgerEntry), Role::USER, NO_CONDITION},
+    {"ledger_header", byRef(&doLedgerHeader), Role::USER, NO_CONDITION, 1, 1},
+    {"ledger_request", byRef(&doLedgerRequest), Role::ADMIN, NO_CONDITION},

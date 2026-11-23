@@ -1,0 +1,45 @@
+# Source excerpt E09 — postfiatd 0085a1ff885d6a446369cf73a4430f75af22be55.
+# File: src/xrpld/rpc/handlers/Version.h, lines 28-64.
+# Line numbers verified with grep -n on a local checkout of the pinned commit.
+# Source file SHA-256: ffbea390368e008ce647e9ba26a2e6ae68f6db7f6f723661d152a5fd8ab53b1f
+# Source file git blob SHA: 4efeed24848958f4049813febd641e7de05c864b
+# Source file size: 1997 bytes
+
+# --- src/xrpld/rpc/handlers/Version.h lines 28-64 ---
+class VersionHandler
+{
+public:
+    explicit VersionHandler(JsonContext& c)
+        : apiVersion_(c.apiVersion), betaEnabled_(c.app.config().BETA_RPC_API)
+    {
+    }
+
+    Status
+    check()
+    {
+        return Status::OK;
+    }
+
+    template <class Object>
+    void
+    writeResult(Object& obj)
+    {
+        setVersion(obj, apiVersion_, betaEnabled_);
+    }
+
+    static constexpr char const* name = "version";
+
+    static constexpr unsigned minApiVer = RPC::apiMinimumSupportedVersion;
+
+    static constexpr unsigned maxApiVer = RPC::apiMaximumValidVersion;
+
+    static constexpr Role role = Role::USER;
+
+    static constexpr Condition condition = NO_CONDITION;
+
+private:
+    unsigned int apiVersion_;
+    bool betaEnabled_;
+};
+
+}  // namespace RPC

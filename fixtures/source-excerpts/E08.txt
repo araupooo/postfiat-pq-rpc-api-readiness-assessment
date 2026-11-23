@@ -1,0 +1,33 @@
+# Source excerpt E08 — postfiatd 0085a1ff885d6a446369cf73a4430f75af22be55.
+# File: src/xrpld/rpc/handlers/LedgerHandler.h, lines 51-75.
+# Line numbers verified with grep -n on a local checkout of the pinned commit.
+# Source file SHA-256: 6b26a18a865b2efd58f90f8c2236c84ad7ecd15f1fa255ffd32146776e25e8ec
+# Source file git blob SHA: 4cbf98450565d04f9f2921464e8d36c9cea2b35d
+# Source file size: 3836 bytes
+
+# --- src/xrpld/rpc/handlers/LedgerHandler.h lines 51-75 ---
+class LedgerHandler
+{
+public:
+    explicit LedgerHandler(JsonContext&);
+
+    Status
+    check();
+
+    template <class Object>
+    void
+    writeResult(Object&);
+
+    static constexpr char name[] = "ledger";
+
+    static constexpr unsigned minApiVer = RPC::apiMinimumSupportedVersion;
+
+    static constexpr unsigned maxApiVer = RPC::apiMaximumValidVersion;
+
+    static constexpr Role role = Role::USER;
+
+    static constexpr Condition condition = NO_CONDITION;
+
+private:
+    JsonContext& context_;
+    std::shared_ptr<ReadView const> ledger_;
