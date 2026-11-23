@@ -1,0 +1,65 @@
+{
+ "pack": "Post-Quantum RPC and API Readiness Assessment",
+ "pinned_commit": "0085a1ff885d6a446369cf73a4430f75af22be55",
+ "counts": {
+  "methods": {
+   "total": 74,
+   "by_exposure": {
+    "hashing": 1,
+    "key-exchange": 2,
+    "none": 65,
+    "signing": 6
+   },
+   "by_urgency": {
+    "HIGH": 6,
+    "LOW": 66,
+    "MEDIUM": 2
+   },
+   "by_recommendation": {
+    "hybrid": 8,
+    "no-change": 66,
+    "pq-only": 0
+   }
+  },
+  "findings": {
+   "total": 10,
+   "by_severity": {
+    "HIGH": 3,
+    "LOW": 3,
+    "MEDIUM": 4
+   },
+   "by_status": {
+    "VERIFIED": 10
+   }
+  },
+  "claims": {
+   "total": 24,
+   "by_status": {
+    "MODELLED": 5,
+    "SPECIFIED": 1,
+    "UNTESTABLE": 2,
+    "VERIFIED": 16
+   }
+  },
+  "risks": {
+   "total": 12,
+   "by_severity": {
+    "HIGH": 3,
+    "LOW": 4,
+    "MEDIUM": 5
+   }
+  },
+  "gaps": 6
+ },
+ "probes": {
+  "passed": 9,
+  "total": 9
+ },
+ "inventory_sha256": "dc58e7d292360f9c3cc1c5384655e80253d349dc0b55dfe8a306d4d9a0745fe7",
+ "matrix_sha256": "7df4d889a99da50c42bee5f7c1ccb96018477d3245af5e6f3d5e070f5deae06c",
+ "verification": {
+  "excerpts": 41,
+  "source_files": 27
+ },
+ "status": "SOURCE-DERIVED"
+}
