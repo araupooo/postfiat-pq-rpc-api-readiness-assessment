@@ -1,0 +1,36 @@
+# Source excerpt E22 — postfiatd 0085a1ff885d6a446369cf73a4430f75af22be55.
+# File: include/xrpl/protocol/digest.h, lines 218-245.
+# Line numbers verified with grep -n on a local checkout of the pinned commit.
+# Source file SHA-256: 346e5b9a04fef7dc248f96e05e239cd7bedbfa8add109a4d20d3a5840220f098
+# Source file git blob SHA: 303fbafe4ff75e3b5b88d224c2da2000ebdbd957
+# Source file size: 6426 bytes
+
+# --- include/xrpl/protocol/digest.h lines 218-245 ---
+
+//------------------------------------------------------------------------------
+
+/** Returns the SHA512-Half of a series of objects. */
+template <class... Args>
+sha512_half_hasher::result_type
+sha512Half(Args const&... args)
+{
+    sha512_half_hasher h;
+    using beast::hash_append;
+    hash_append(h, args...);
+    return static_cast<typename sha512_half_hasher::result_type>(h);
+}
+
+/** Returns the SHA512-Half of a series of objects.
+
+    Postconditions:
+        Temporary memory storing copies of
+        input messages will be cleared.
+*/
+template <class... Args>
+sha512_half_hasher_s::result_type
+sha512Half_s(Args const&... args)
+{
+    sha512_half_hasher_s h;
+    using beast::hash_append;
+    hash_append(h, args...);
+    return static_cast<typename sha512_half_hasher_s::result_type>(h);

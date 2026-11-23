@@ -1,0 +1,29 @@
+# Source excerpt E31 — postfiatd 0085a1ff885d6a446369cf73a4430f75af22be55.
+# File: src/xrpld/rpc/GRPCHandlers.h, lines 36-56.
+# Line numbers verified with grep -n on a local checkout of the pinned commit.
+# Source file SHA-256: c887f5d1b5f9aa29da29273cdb0ae8956093078e6d6406dc10b5fc88bf7336eb
+# Source file git blob SHA: 29e3b1b9ca630337f3bbf71a84a7537ea3257fc0
+# Source file size: 2278 bytes
+
+# --- src/xrpld/rpc/GRPCHandlers.h lines 36-56 ---
+ * the status will be sent to the client, and the response will be ommitted
+ */
+
+std::pair<org::xrpl::rpc::v1::GetLedgerResponse, grpc::Status>
+doLedgerGrpc(RPC::GRPCContext<org::xrpl::rpc::v1::GetLedgerRequest>& context);
+
+std::pair<org::xrpl::rpc::v1::GetLedgerEntryResponse, grpc::Status>
+doLedgerEntryGrpc(
+    RPC::GRPCContext<org::xrpl::rpc::v1::GetLedgerEntryRequest>& context);
+
+std::pair<org::xrpl::rpc::v1::GetLedgerDataResponse, grpc::Status>
+doLedgerDataGrpc(
+    RPC::GRPCContext<org::xrpl::rpc::v1::GetLedgerDataRequest>& context);
+
+std::pair<org::xrpl::rpc::v1::GetLedgerDiffResponse, grpc::Status>
+doLedgerDiffGrpc(
+    RPC::GRPCContext<org::xrpl::rpc::v1::GetLedgerDiffRequest>& context);
+
+}  // namespace ripple
+
+#endif

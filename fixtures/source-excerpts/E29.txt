@@ -1,0 +1,19 @@
+# Source excerpt E29 — postfiatd 0085a1ff885d6a446369cf73a4430f75af22be55.
+# File: src/xrpld/rpc/handlers/LedgerData.cpp, lines 75-85.
+# Line numbers verified with grep -n on a local checkout of the pinned commit.
+# Source file SHA-256: a955f033090fff251d5bc0d57e9b4e9703e3e518e745da2ae88c97829fd0951d
+# Source file git blob SHA: e6c579a4b50ec0dcca0fa6aa8da521ed7e640b3a
+# Source file size: 6948 bytes
+
+# --- src/xrpld/rpc/handlers/LedgerData.cpp lines 75-85 ---
+
+    auto maxLimit = RPC::Tuning::pageLength(isBinary);
+    if ((limit < 0) || ((limit > maxLimit) && (!isUnlimited(context.role))))
+        limit = maxLimit;
+
+    jvResult[jss::ledger_hash] = to_string(lpLedger->info().hash);
+    jvResult[jss::ledger_index] = lpLedger->info().seq;
+
+    if (!isMarker)
+    {
+        // Return base ledger data on first query

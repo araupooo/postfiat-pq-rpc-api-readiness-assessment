@@ -1,0 +1,21 @@
+# Source excerpt E30 — postfiatd 0085a1ff885d6a446369cf73a4430f75af22be55.
+# File: src/xrpld/rpc/handlers/Tx.cpp, lines 44-56.
+# Line numbers verified with grep -n on a local checkout of the pinned commit.
+# Source file SHA-256: e5ec8e67f9dab7cd0a9716acf85f3d10d3f5263e630948ba416ae8833244413b
+# Source file git blob SHA: d43a699ab312238b9877906fc5e59c4d4b270856
+# Source file size: 10857 bytes
+
+# --- src/xrpld/rpc/handlers/Tx.cpp lines 44-56 ---
+isValidated(LedgerMaster& ledgerMaster, std::uint32_t seq, uint256 const& hash)
+{
+    if (!ledgerMaster.haveLedger(seq))
+        return false;
+
+    if (seq > ledgerMaster.getValidatedLedger()->info().seq)
+        return false;
+
+    return ledgerMaster.getHashBySeq(seq) == hash;
+}
+
+struct TxResult
+{

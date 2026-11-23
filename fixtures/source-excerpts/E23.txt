@@ -1,0 +1,39 @@
+# Source excerpt E23 — postfiatd 0085a1ff885d6a446369cf73a4430f75af22be55.
+# File: include/xrpl/protocol/KeyType.h, lines 25-55.
+# Line numbers verified with grep -n on a local checkout of the pinned commit.
+# Source file SHA-256: aca748df9ecac78751e03f5076e09f918a01a47a24358cd19b9ffcbcabb59069
+# Source file git blob SHA: 810e3e6fdf49a2cb73449b3a387ad5ea525c2bba
+# Source file size: 1795 bytes
+
+# --- include/xrpl/protocol/KeyType.h lines 25-55 ---
+
+namespace ripple {
+
+enum class KeyType {
+    secp256k1 = 0,
+    ed25519 = 1,
+};
+
+inline std::optional<KeyType>
+keyTypeFromString(std::string const& s)
+{
+    if (s == "secp256k1")
+        return KeyType::secp256k1;
+
+    if (s == "ed25519")
+        return KeyType::ed25519;
+
+    return {};
+}
+
+inline char const*
+to_string(KeyType type)
+{
+    if (type == KeyType::secp256k1)
+        return "secp256k1";
+
+    if (type == KeyType::ed25519)
+        return "ed25519";
+
+    return "INVALID";
+}

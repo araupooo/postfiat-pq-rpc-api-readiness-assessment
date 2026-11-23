@@ -1,0 +1,19 @@
+# Source excerpt E32 — postfiatd 0085a1ff885d6a446369cf73a4430f75af22be55.
+# File: src/libxrpl/protocol/Indexes.cpp, lines 105-115.
+# Line numbers verified with grep -n on a local checkout of the pinned commit.
+# Source file SHA-256: d47d6908a488111b3fc0009ebfa5d11cec958526b76141b2866b9c35f3b4f8cf
+# Source file git blob SHA: ac37129bdb792072503bd1b1fe5b86e7693e3071
+# Source file size: 16441 bytes
+
+# --- src/libxrpl/protocol/Indexes.cpp lines 105-115 ---
+    GENERATOR [[deprecated]] = 'g',
+    NICKNAME [[deprecated]] = 'n',
+};
+
+template <class... Args>
+static uint256
+indexHash(LedgerNameSpace space, Args const&... args)
+{
+    return sha512Half(safe_cast<std::uint16_t>(space), args...);
+}
+

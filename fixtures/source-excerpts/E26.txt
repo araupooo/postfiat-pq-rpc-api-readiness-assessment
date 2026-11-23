@@ -1,0 +1,25 @@
+# Source excerpt E26 — postfiatd 0085a1ff885d6a446369cf73a4430f75af22be55.
+# File: src/libxrpl/basics/make_SSLContext.cpp, lines 90-106.
+# Line numbers verified with grep -n on a local checkout of the pinned commit.
+# Source file SHA-256: 073673b3cc9d4545fba104781e8265fc15da0c8c2d336dc843aaa46d4f2010cc
+# Source file git blob SHA: 980f2d48a69ac6a52d0699a7c46d6752b01d43e9
+# Source file size: 13115 bytes
+
+# --- src/libxrpl/basics/make_SSLContext.cpp lines 90-106 ---
+/** The default list of ciphers we accept over TLS.
+
+    Generally we include cipher suites that are part of TLS v1.2, but
+    we specifically exclude:
+
+    - the DSS cipher suites (!DSS);
+    - cipher suites using pre-shared keys (!PSK);
+    - cipher suites that don't offer encryption (!eNULL); and
+    - cipher suites that don't offer authentication (!aNULL).
+
+    @note Server administrators can override this default list, on either a
+          global or per-port basis, using the `ssl_ciphers` directive in the
+          config file.
+ */
+std::string const defaultCipherList = "TLSv1.2:!CBC:!DSS:!PSK:!eNULL:!aNULL";
+
+static void

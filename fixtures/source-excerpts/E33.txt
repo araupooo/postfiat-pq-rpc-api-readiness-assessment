@@ -1,0 +1,23 @@
+# Source excerpt E33 — postfiatd 0085a1ff885d6a446369cf73a4430f75af22be55.
+# File: src/xrpld/rpc/handlers/Random.cpp, lines 36-50.
+# Line numbers verified with grep -n on a local checkout of the pinned commit.
+# Source file SHA-256: 6e1b4a31e309bba9031ab4e68e9d4b17ebe613fe027da9b48e6917f5b27c8104
+# Source file git blob SHA: c2a984a2c4b4ba88e3a8382f2de1019b892e07c3
+# Source file size: 1884 bytes
+
+# --- src/xrpld/rpc/handlers/Random.cpp lines 36-50 ---
+//   random: <uint256>
+// }
+Json::Value
+doRandom(RPC::JsonContext& context)
+{
+    // TODO(tom): the try/catch is almost certainly redundant, we catch at the
+    // top level too.
+    try
+    {
+        uint256 rand;
+        beast::rngfill(rand.begin(), rand.size(), crypto_prng());
+
+        Json::Value jvResult;
+        jvResult[jss::random] = to_string(rand);
+        return jvResult;
