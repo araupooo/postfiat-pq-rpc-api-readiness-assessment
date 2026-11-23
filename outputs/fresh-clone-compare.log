@@ -1,0 +1,6 @@
+clean_reproduce.sh fresh run
+shipped classifier status: pass
+fresh classifier status: pass
+shipped probe status: pass
+fresh probe status: pass
+compare: 50/50 checks PASS

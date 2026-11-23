@@ -1,0 +1,210 @@
+{
+ "default_none_methods": [
+  "account_channels",
+  "account_currencies",
+  "account_info",
+  "account_lines",
+  "account_nfts",
+  "account_objects",
+  "account_offers",
+  "amm_info",
+  "blacklist",
+  "book_changes",
+  "book_offers",
+  "can_delete",
+  "consensus_info",
+  "deposit_authorized",
+  "exclusion_info",
+  "feature",
+  "fee",
+  "fetch_info",
+  "gateway_balances",
+  "get_aggregate_price",
+  "get_counts",
+  "ledger_accept",
+  "ledger_cleaner",
+  "ledger_current",
+  "ledger_request",
+  "log_level",
+  "logrotate",
+  "nft_buy_offers",
+  "nft_sell_offers",
+  "noripple_check",
+  "owner_info",
+  "path_find",
+  "peer_reservations_add",
+  "peer_reservations_del",
+  "peer_reservations_list",
+  "peers",
+  "ping",
+  "print",
+  "ripple_path_find",
+  "server_state",
+  "stop",
+  "subscribe",
+  "tx_history",
+  "tx_reduce_relay",
+  "unl_list",
+  "unsubscribe",
+  "validator_info",
+  "validator_list_sites",
+  "validator_votes",
+  "validators",
+  "vault_info",
+  "version"
+ ],
+ "explicit_rule_methods": [
+  "account_tx",
+  "channel_authorize",
+  "channel_verify",
+  "connect",
+  "ledger",
+  "ledger_closed",
+  "ledger_data",
+  "ledger_entry",
+  "ledger_header",
+  "manifest",
+  "random",
+  "server_definitions",
+  "server_info",
+  "sign",
+  "sign_for",
+  "simulate",
+  "submit",
+  "submit_multisigned",
+  "transaction_entry",
+  "tx",
+  "validation_create",
+  "wallet_propose"
+ ],
+ "exposure_counts": {
+  "hashing": 1,
+  "key-exchange": 2,
+  "none": 65,
+  "signing": 6
+ },
+ "grpc_method_count": 4,
+ "grpc_methods": [
+  {
+   "file": "src/xrpld/rpc/GRPCHandlers.h",
+   "line": 47,
+   "method": "doLedgerDataGrpc"
+  },
+  {
+   "file": "src/xrpld/rpc/GRPCHandlers.h",
+   "line": 51,
+   "method": "doLedgerDiffGrpc"
+  },
+  {
+   "file": "src/xrpld/rpc/GRPCHandlers.h",
+   "line": 43,
+   "method": "doLedgerEntryGrpc"
+  },
+  {
+   "file": "src/xrpld/rpc/GRPCHandlers.h",
+   "line": 40,
+   "method": "doLedgerGrpc"
+  }
+ ],
+ "hash_data_methods": [
+  "account_tx",
+  "ledger",
+  "ledger_closed",
+  "ledger_data",
+  "ledger_entry",
+  "ledger_header",
+  "transaction_entry",
+  "tx"
+ ],
+ "hashing_methods": [
+  "server_definitions"
+ ],
+ "high_urgency_methods": [
+  "channel_authorize",
+  "sign",
+  "sign_for",
+  "submit",
+  "validation_create",
+  "wallet_propose"
+ ],
+ "key_exchange_methods": [
+  "validation_create",
+  "wallet_propose"
+ ],
+ "method_count": 74,
+ "pack": "Post-Quantum RPC and API Readiness Assessment",
+ "pinned_commit": "0085a1ff885d6a446369cf73a4430f75af22be55",
+ "pq_absence": {
+  "scope": [
+   "src",
+   "include"
+  ],
+  "terms_checked": [
+   "ML-KEM",
+   "ML-DSA",
+   "SLH-DSA",
+   "Kyber",
+   "Dilithium",
+   "SPHINCS",
+   "mlkem",
+   "mldsa",
+   "slhdsa"
+  ],
+  "total_file_hits": 0
+ },
+ "readiness_families": [
+  "ed25519",
+  "ml-dsa",
+  "ml-kem",
+  "secp256k1",
+  "sha512-half",
+  "slh-dsa",
+  "tls-transport"
+ ],
+ "recommendation_counts": {
+  "hybrid": 8,
+  "no-change": 66,
+  "pq-only": 0
+ },
+ "role_counts": {
+  "ADMIN": 23,
+  "USER": 51
+ },
+ "signature_create_methods": [
+  "channel_authorize",
+  "sign",
+  "sign_for",
+  "submit"
+ ],
+ "signature_verify_methods": [
+  "channel_verify",
+  "sign",
+  "submit",
+  "submit_multisigned"
+ ],
+ "signing_methods": [
+  "channel_authorize",
+  "channel_verify",
+  "sign",
+  "sign_for",
+  "submit",
+  "submit_multisigned"
+ ],
+ "unregistered_declared_handlers": [
+  {
+   "file": "src/xrpld/rpc/handlers/Handlers.h",
+   "handler_function": "doPause",
+   "line": 110
+  },
+  {
+   "file": "src/xrpld/rpc/handlers/Handlers.h",
+   "handler_function": "doResume",
+   "line": 120
+  }
+ ],
+ "urgency_counts": {
+  "HIGH": 6,
+  "LOW": 66,
+  "MEDIUM": 2
+ }
+}

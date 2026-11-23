@@ -1,0 +1,13 @@
+PASS A-01 inventory: 74 methods (72 handlerArray + 2 addHandler), no duplicates, every registration site and implementation line names the method — 74 methods, all sites verified
+PASS B-01 exposure 6/2/1/65, urgency 6/2/66, recommendation 8/66/0; all sum to 74 and match the matrix — exposure={'none': 65, 'signing': 6, 'hashing': 1, 'key-exchange': 2} urgency={'LOW': 66, 'HIGH': 6, 'MEDIUM': 2} recommendation={'no-change': 66, 'hybrid': 8}
+PASS C-01 every rule's evidence token sits at its recorded line; every default-none implementation is free of crypto tokens — 22 explicit rules verified, 52 default-none implementations clean
+PASS D-01 readiness table: 7 families, status 2/1/3/1, every source anchor re-verified in range, PQ grep 0 hits — 7 families; PQ terms checked: ML-KEM, ML-DSA, SLH-DSA, Kyber, Dilithium, SPHINCS, mlkem, mldsa, slhdsa
+PASS E-01 gRPC surface is 4 methods (GetLedger/GetLedgerEntry/GetLedgerData/GetLedgerDiff); declared-but-unregistered handlers are exactly doPause/doResume — grpc=4 unregistered=['doPause', 'doResume']
+PASS F-01 matrix lists reconcile with the inventory and readiness table; excerpt manifest, extracted files and source-hashes.json agree — 41 excerpts, 27 source files in hashes
+PASS G-01 determinism: classifier re-run reproduces byte-identical inventory and matrix (full SHA-256) — inventory shipped=dc58e7d292360f9c3cc1c5384655e80253d349dc0b55dfe8a306d4d9a0745fe7 rerun=dc58e7d292360f9c3cc1c5384655e80253d349dc0b55dfe8a306d4d9a0745fe7; matrix shipped=7df4d889a99da50c42bee5f7c1ccb96018477d3245af5e6f3d5e070f5deae06c rerun=7df4d889a99da50c42bee5f7c1ccb96018477d3245af5e6f3d5e070f5deae06c
+PASS H-01 every excerpt file digest matches fixtures/source-hashes.json — 41 excerpt digests verified
+PASS T-01 timing sanity: total probe elapsed_ms is non-negative (loose band, never exact) — value not recorded; never compared
+probe: 9/9 checks PASS
+probe: method-inventory.json sha256: dc58e7d292360f9c3cc1c5384655e80253d349dc0b55dfe8a306d4d9a0745fe7
+probe: readiness-matrix.json sha256: 7df4d889a99da50c42bee5f7c1ccb96018477d3245af5e6f3d5e070f5deae06c
+probe: pinned commit 0085a1ff885d6a446369cf73a4430f75af22be55

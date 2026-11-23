@@ -1,0 +1,10 @@
+# run.log — deterministic output digests (no timestamps, no absolute paths)
+# step extract_excerpts: pass
+# step readiness_table: pass
+# step classifier: pass
+# step probe: pass
+dc58e7d292360f9c3cc1c5384655e80253d349dc0b55dfe8a306d4d9a0745fe7  outputs/derived/method-inventory.json
+75d6253020f78342f73be87731117dfe22392497006fe74ff1a66dab915f4b53  outputs/derived/probe-results.json
+7df4d889a99da50c42bee5f7c1ccb96018477d3245af5e6f3d5e070f5deae06c  outputs/derived/readiness-matrix.json
+c8515ea12ac528bf3a0448a0f40a9243791b32d5762ee275af99b89fceb768b4  outputs/derived/run-summary.json
+d3d0d49c658f843bed2f74c193483e33b4ac650ac409f7b6f6e1b80b20bf168f  outputs/probe-run.log

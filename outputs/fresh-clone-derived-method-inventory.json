@@ -1,0 +1,2570 @@
+{
+ "handler_table": "src/xrpld/rpc/detail/Handler.cpp",
+ "method_count": 74,
+ "methods": [
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 92,
+    "token": "\"account_channels\""
+   },
+   "exposure": "none",
+   "handler_function": "doAccountChannels",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/AccountChannels.cpp",
+    "line": 68
+   },
+   "max_api_version": null,
+   "method": "account_channels",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 92,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 92
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 87,
+    "token": "\"account_currencies\""
+   },
+   "exposure": "none",
+   "handler_function": "doAccountCurrencies",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/AccountCurrenciesHandler.cpp",
+    "line": 32
+   },
+   "max_api_version": null,
+   "method": "account_currencies",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 90,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 87
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 86,
+    "token": "\"account_info\""
+   },
+   "exposure": "none",
+   "handler_function": "doAccountInfo",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/AccountInfo.cpp",
+    "line": 50
+   },
+   "max_api_version": null,
+   "method": "account_info",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 86,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 86
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 91,
+    "token": "\"account_lines\""
+   },
+   "exposure": "none",
+   "handler_function": "doAccountLines",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/AccountLines.cpp",
+    "line": 81
+   },
+   "max_api_version": null,
+   "method": "account_lines",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 91,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 91
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 93,
+    "token": "\"account_nfts\""
+   },
+   "exposure": "none",
+   "handler_function": "doAccountNFTs",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/AccountObjects.cpp",
+    "line": 50
+   },
+   "max_api_version": null,
+   "method": "account_nfts",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 93,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 93
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 94,
+    "token": "\"account_objects\""
+   },
+   "exposure": "none",
+   "handler_function": "doAccountObjects",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/AccountObjects.cpp",
+    "line": 181
+   },
+   "max_api_version": null,
+   "method": "account_objects",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 94,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 94
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 95,
+    "token": "\"account_offers\""
+   },
+   "exposure": "none",
+   "handler_function": "doAccountOffers",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/AccountOffers.cpp",
+    "line": 57
+   },
+   "max_api_version": null,
+   "method": "account_offers",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 95,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 95
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/handlers/AccountTx.cpp",
+    "line": 329,
+    "token": "getHashBySeq("
+   },
+   "exposure": "none",
+   "handler_function": "doAccountTxJson",
+   "hash_data": true,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/AccountTx.cpp",
+    "line": 408
+   },
+   "max_api_version": null,
+   "method": "account_tx",
+   "min_api_version": null,
+   "primitives": [
+    "sha512-half"
+   ],
+   "rationale": "account_tx returns transactions with their hashes and per-ledger hashes but computes no hash in the handler.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 96,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 96
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "explicit",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 97,
+    "token": "\"amm_info\""
+   },
+   "exposure": "none",
+   "handler_function": "doAMMInfo",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/AMMInfo.cpp",
+    "line": 76
+   },
+   "max_api_version": null,
+   "method": "amm_info",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 97,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 97
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 98,
+    "token": "\"blacklist\""
+   },
+   "exposure": "none",
+   "handler_function": "doBlackList",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/BlackList.cpp",
+    "line": 29
+   },
+   "max_api_version": null,
+   "method": "blacklist",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 98,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 98
+   },
+   "registration_style": "handlerArray",
+   "role": "ADMIN",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 99,
+    "token": "\"book_changes\""
+   },
+   "exposure": "none",
+   "handler_function": "doBookChanges",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/BookOffers.cpp",
+    "line": 222
+   },
+   "max_api_version": null,
+   "method": "book_changes",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 99,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 99
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 100,
+    "token": "\"book_offers\""
+   },
+   "exposure": "none",
+   "handler_function": "doBookOffers",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/BookOffers.cpp",
+    "line": 37
+   },
+   "max_api_version": null,
+   "method": "book_offers",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 100,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 100
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 101,
+    "token": "\"can_delete\""
+   },
+   "exposure": "none",
+   "handler_function": "doCanDelete",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/CanDelete.cpp",
+    "line": 35
+   },
+   "max_api_version": null,
+   "method": "can_delete",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 101,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 101
+   },
+   "registration_style": "handlerArray",
+   "role": "ADMIN",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/handlers/PayChanClaim.cpp",
+    "line": 92,
+    "token": "sign(pk, sk, msg.slice())"
+   },
+   "exposure": "signing",
+   "handler_function": "doChannelAuthorize",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/PayChanClaim.cpp",
+    "line": 42
+   },
+   "max_api_version": null,
+   "method": "channel_authorize",
+   "min_api_version": null,
+   "primitives": [
+    "ed25519",
+    "secp256k1"
+   ],
+   "rationale": "channel_authorize signs a payment-channel claim with the supplied secret key. Gated on canSign() for non-ADMIN callers.",
+   "recommendation": "hybrid",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 102,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 102
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "explicit",
+   "signature_operation": "create",
+   "urgency": "HIGH",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/handlers/PayChanClaim.cpp",
+    "line": 160,
+    "token": "verify(*pk, msg.slice()"
+   },
+   "exposure": "signing",
+   "handler_function": "doChannelVerify",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/PayChanClaim.cpp",
+    "line": 113
+   },
+   "max_api_version": null,
+   "method": "channel_verify",
+   "min_api_version": null,
+   "primitives": [
+    "ed25519",
+    "secp256k1"
+   ],
+   "rationale": "channel_verify verifies a payment-channel claim signature against a supplied public key; no secret key is involved.",
+   "recommendation": "hybrid",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 103,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 103
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "explicit",
+   "signature_operation": "verify",
+   "urgency": "MEDIUM",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/overlay/detail/Handshake.cpp",
+    "line": 203,
+    "token": "signDigest("
+   },
+   "exposure": "none",
+   "handler_function": "doConnect",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/Connect.cpp",
+    "line": 39
+   },
+   "max_api_version": null,
+   "method": "connect",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "connect only initiates an overlay connection; the peer-handshake session signature is created in the overlay layer, not in the handler.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 104,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 104
+   },
+   "registration_style": "handlerArray",
+   "role": "ADMIN",
+   "rule": "explicit",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 105,
+    "token": "\"consensus_info\""
+   },
+   "exposure": "none",
+   "handler_function": "doConsensusInfo",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/ConsensusInfo.cpp",
+    "line": 30
+   },
+   "max_api_version": null,
+   "method": "consensus_info",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 105,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 105
+   },
+   "registration_style": "handlerArray",
+   "role": "ADMIN",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 106,
+    "token": "\"deposit_authorized\""
+   },
+   "exposure": "none",
+   "handler_function": "doDepositAuthorized",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/DepositAuthorized.cpp",
+    "line": 41
+   },
+   "max_api_version": null,
+   "method": "deposit_authorized",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 109,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 106
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 110,
+    "token": "\"exclusion_info\""
+   },
+   "exposure": "none",
+   "handler_function": "doExclusionInfo",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/ExclusionInfo.cpp",
+    "line": 35
+   },
+   "max_api_version": null,
+   "method": "exclusion_info",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 110,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 110
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 111,
+    "token": "\"feature\""
+   },
+   "exposure": "none",
+   "handler_function": "doFeature",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/Feature1.cpp",
+    "line": 36
+   },
+   "max_api_version": null,
+   "method": "feature",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 111,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 111
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NEEDS_CURRENT_LEDGER",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 112,
+    "token": "\"fee\""
+   },
+   "exposure": "none",
+   "handler_function": "doFee",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/Fee1.cpp",
+    "line": 30
+   },
+   "max_api_version": null,
+   "method": "fee",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 112,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 112
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 113,
+    "token": "\"fetch_info\""
+   },
+   "exposure": "none",
+   "handler_function": "doFetchInfo",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/FetchInfo.cpp",
+    "line": 30
+   },
+   "max_api_version": null,
+   "method": "fetch_info",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 113,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 113
+   },
+   "registration_style": "handlerArray",
+   "role": "ADMIN",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 114,
+    "token": "\"gateway_balances\""
+   },
+   "exposure": "none",
+   "handler_function": "doGatewayBalances",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/GatewayBalances.cpp",
+    "line": 54
+   },
+   "max_api_version": null,
+   "method": "gateway_balances",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 114,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 114
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 116,
+    "token": "\"get_aggregate_price\""
+   },
+   "exposure": "none",
+   "handler_function": "doGetAggregatePrice",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/GetAggregatePrice.cpp",
+    "line": 153
+   },
+   "max_api_version": null,
+   "method": "get_aggregate_price",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 119,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 116
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 115,
+    "token": "\"get_counts\""
+   },
+   "exposure": "none",
+   "handler_function": "doGetCounts",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/GetCounts.cpp",
+    "line": 138
+   },
+   "max_api_version": null,
+   "method": "get_counts",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 115,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 115
+   },
+   "registration_style": "handlerArray",
+   "role": "ADMIN",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "class_file": "src/xrpld/rpc/handlers/LedgerHandler.h",
+   "class_name_line": 63,
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/handlers/LedgerHandler.cpp",
+    "line": 150,
+    "token": "getTransactionID()"
+   },
+   "exposure": "none",
+   "handler_function": "LedgerHandler",
+   "hash_data": true,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/LedgerHandler.h",
+    "line": 51
+   },
+   "max_api_version": "RPC::apiMaximumValidVersion",
+   "method": "ledger",
+   "min_api_version": "RPC::apiMinimumSupportedVersion",
+   "primitives": [
+    "sha512-half"
+   ],
+   "rationale": "ledger returns ledger data including transaction IDs (sha512Half values) but computes no hash in the handler.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 248,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 248
+   },
+   "registration_style": "addHandler",
+   "role": "USER",
+   "rule": "explicit",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NEEDS_CURRENT_LEDGER",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 120,
+    "token": "\"ledger_accept\""
+   },
+   "exposure": "none",
+   "handler_function": "doLedgerAccept",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/LedgerAccept.cpp",
+    "line": 34
+   },
+   "max_api_version": null,
+   "method": "ledger_accept",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 123,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 120
+   },
+   "registration_style": "handlerArray",
+   "role": "ADMIN",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NEEDS_NETWORK_CONNECTION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 124,
+    "token": "\"ledger_cleaner\""
+   },
+   "exposure": "none",
+   "handler_function": "doLedgerCleaner",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/LedgerCleanerHandler.cpp",
+    "line": 30
+   },
+   "max_api_version": null,
+   "method": "ledger_cleaner",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 127,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 124
+   },
+   "registration_style": "handlerArray",
+   "role": "ADMIN",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NEEDS_CLOSED_LEDGER",
+   "evidence": {
+    "file": "src/xrpld/rpc/handlers/LedgerClosed.cpp",
+    "line": 37,
+    "token": "ledger->info().hash"
+   },
+   "exposure": "none",
+   "handler_function": "doLedgerClosed",
+   "hash_data": true,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/LedgerClosed.cpp",
+    "line": 30
+   },
+   "max_api_version": null,
+   "method": "ledger_closed",
+   "min_api_version": null,
+   "primitives": [
+    "sha512-half"
+   ],
+   "rationale": "ledger_closed returns the closed ledger's hash but computes no hash in the handler.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 128,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 128
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "explicit",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NEEDS_CURRENT_LEDGER",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 129,
+    "token": "\"ledger_current\""
+   },
+   "exposure": "none",
+   "handler_function": "doLedgerCurrent",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/LedgerCurrent.cpp",
+    "line": 30
+   },
+   "max_api_version": null,
+   "method": "ledger_current",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 132,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 129
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/handlers/LedgerData.cpp",
+    "line": 80,
+    "token": "lpLedger->info().hash"
+   },
+   "exposure": "none",
+   "handler_function": "doLedgerData",
+   "hash_data": true,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/LedgerData.cpp",
+    "line": 46
+   },
+   "max_api_version": null,
+   "method": "ledger_data",
+   "min_api_version": null,
+   "primitives": [
+    "sha512-half"
+   ],
+   "rationale": "ledger_data returns the selected ledger's hash but computes no hash in the handler.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 133,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 133
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "explicit",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/libxrpl/protocol/Indexes.cpp",
+    "line": 113,
+    "token": "return sha512Half(safe_cast"
+   },
+   "exposure": "none",
+   "handler_function": "doLedgerEntry",
+   "hash_data": true,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/LedgerEntry.cpp",
+    "line": 755
+   },
+   "max_api_version": null,
+   "method": "ledger_entry",
+   "min_api_version": null,
+   "primitives": [
+    "sha512-half"
+   ],
+   "rationale": "ledger_entry looks up entries by index; entry indexes are sha512Half values, but the handler computes no hash.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 134,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 134
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "explicit",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-1",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/handlers/LedgerHeader.cpp",
+    "line": 48,
+    "token": "addJson(jvResult, {*lpLedger, &context, 0});"
+   },
+   "exposure": "none",
+   "handler_function": "doLedgerHeader",
+   "hash_data": true,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/LedgerHeader.cpp",
+    "line": 34
+   },
+   "max_api_version": 1,
+   "method": "ledger_header",
+   "min_api_version": 1,
+   "primitives": [
+    "sha512-half"
+   ],
+   "rationale": "ledger_header serialises the ledger header, including its hash, but computes no hash in the handler.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 135,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 135
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "explicit",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 136,
+    "token": "\"ledger_request\""
+   },
+   "exposure": "none",
+   "handler_function": "doLedgerRequest",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/LedgerRequest.cpp",
+    "line": 36
+   },
+   "max_api_version": null,
+   "method": "ledger_request",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 136,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 136
+   },
+   "registration_style": "handlerArray",
+   "role": "ADMIN",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 137,
+    "token": "\"log_level\""
+   },
+   "exposure": "none",
+   "handler_function": "doLogLevel",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/LogLevel.cpp",
+    "line": 34
+   },
+   "max_api_version": null,
+   "method": "log_level",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 137,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 137
+   },
+   "registration_style": "handlerArray",
+   "role": "ADMIN",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 138,
+    "token": "\"logrotate\""
+   },
+   "exposure": "none",
+   "handler_function": "doLogRotate",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/LogRotate.cpp",
+    "line": 29
+   },
+   "max_api_version": null,
+   "method": "logrotate",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 138,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 138
+   },
+   "registration_style": "handlerArray",
+   "role": "ADMIN",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/handlers/DoManifest.cpp",
+    "line": 42,
+    "token": "parseBase58<PublicKey>(TokenType::NodePublic, requested)"
+   },
+   "exposure": "none",
+   "handler_function": "doManifest",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/DoManifest.cpp",
+    "line": 30
+   },
+   "max_api_version": null,
+   "method": "manifest",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "manifest is a read-only lookup of a stored validator manifest by public key; manifest signature verification lives in the validator-manifest layer.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 139,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 139
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "explicit",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 140,
+    "token": "\"nft_buy_offers\""
+   },
+   "exposure": "none",
+   "handler_function": "doNFTBuyOffers",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/NFTOffers.cpp",
+    "line": 165
+   },
+   "max_api_version": null,
+   "method": "nft_buy_offers",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 140,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 140
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 141,
+    "token": "\"nft_sell_offers\""
+   },
+   "exposure": "none",
+   "handler_function": "doNFTSellOffers",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/NFTOffers.cpp",
+    "line": 151
+   },
+   "max_api_version": null,
+   "method": "nft_sell_offers",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 141,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 141
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 142,
+    "token": "\"noripple_check\""
+   },
+   "exposure": "none",
+   "handler_function": "doNoRippleCheck",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/NoRippleCheck.cpp",
+    "line": 62
+   },
+   "max_api_version": null,
+   "method": "noripple_check",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 142,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 142
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NEEDS_CURRENT_LEDGER",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 143,
+    "token": "\"owner_info\""
+   },
+   "exposure": "none",
+   "handler_function": "doOwnerInfo",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/OwnerInfo.cpp",
+    "line": 35
+   },
+   "max_api_version": null,
+   "method": "owner_info",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 143,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 143
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NEEDS_CURRENT_LEDGER",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 145,
+    "token": "\"path_find\""
+   },
+   "exposure": "none",
+   "handler_function": "doPathFind",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/PathFind.cpp",
+    "line": 33
+   },
+   "max_api_version": null,
+   "method": "path_find",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 145,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 145
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 151,
+    "token": "\"peer_reservations_add\""
+   },
+   "exposure": "none",
+   "handler_function": "doPeerReservationsAdd",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/Reservations.cpp",
+    "line": 36
+   },
+   "max_api_version": null,
+   "method": "peer_reservations_add",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 154,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 151
+   },
+   "registration_style": "handlerArray",
+   "role": "ADMIN",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 155,
+    "token": "\"peer_reservations_del\""
+   },
+   "exposure": "none",
+   "handler_function": "doPeerReservationsDel",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/Reservations.cpp",
+    "line": 89
+   },
+   "max_api_version": null,
+   "method": "peer_reservations_del",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 158,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 155
+   },
+   "registration_style": "handlerArray",
+   "role": "ADMIN",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 159,
+    "token": "\"peer_reservations_list\""
+   },
+   "exposure": "none",
+   "handler_function": "doPeerReservationsList",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/Reservations.cpp",
+    "line": 116
+   },
+   "max_api_version": null,
+   "method": "peer_reservations_list",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 162,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 159
+   },
+   "registration_style": "handlerArray",
+   "role": "ADMIN",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 144,
+    "token": "\"peers\""
+   },
+   "exposure": "none",
+   "handler_function": "doPeers",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/Peers.cpp",
+    "line": 33
+   },
+   "max_api_version": null,
+   "method": "peers",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 144,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 144
+   },
+   "registration_style": "handlerArray",
+   "role": "ADMIN",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 146,
+    "token": "\"ping\""
+   },
+   "exposure": "none",
+   "handler_function": "doPing",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/Ping.cpp",
+    "line": 33
+   },
+   "max_api_version": null,
+   "method": "ping",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 146,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 146
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 147,
+    "token": "\"print\""
+   },
+   "exposure": "none",
+   "handler_function": "doPrint",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/Print.cpp",
+    "line": 30
+   },
+   "max_api_version": null,
+   "method": "print",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 147,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 147
+   },
+   "registration_style": "handlerArray",
+   "role": "ADMIN",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/handlers/Random.cpp",
+    "line": 46,
+    "token": "crypto_prng()"
+   },
+   "exposure": "none",
+   "handler_function": "doRandom",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/Random.cpp",
+    "line": 39
+   },
+   "max_api_version": null,
+   "method": "random",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "random returns one CSPRNG output (beast::rngfill with crypto_prng()); it creates no key, signature, or hash.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 150,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 150
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "explicit",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 163,
+    "token": "\"ripple_path_find\""
+   },
+   "exposure": "none",
+   "handler_function": "doRipplePathFind",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/RipplePathFind.cpp",
+    "line": 33
+   },
+   "max_api_version": null,
+   "method": "ripple_path_find",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 163,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 163
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/handlers/ServerInfo.cpp",
+    "line": 291,
+    "token": "sha512Half(ripple::Slice"
+   },
+   "exposure": "hashing",
+   "handler_function": "doServerDefinitions",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/ServerInfo.cpp",
+    "line": 299
+   },
+   "max_api_version": null,
+   "method": "server_definitions",
+   "min_api_version": null,
+   "primitives": [
+    "sha512-half"
+   ],
+   "rationale": "server_definitions is the only handler that computes a hash: sha512Half over the serialised definitions JSON.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 167,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 164
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "explicit",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/handlers/ServerInfo.cpp",
+    "line": 291,
+    "token": "sha512Half(ripple::Slice"
+   },
+   "exposure": "none",
+   "handler_function": "doServerInfo",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/ServerInfo.cpp",
+    "line": 322
+   },
+   "max_api_version": null,
+   "method": "server_info",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "The sha512Half call in ServerInfo.cpp computes the definitions hash served by server_definitions; server_info itself returns server state and emits no hash.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 168,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 168
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "explicit",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 169,
+    "token": "\"server_state\""
+   },
+   "exposure": "none",
+   "handler_function": "doServerState",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/ServerState.cpp",
+    "line": 30
+   },
+   "max_api_version": null,
+   "method": "server_state",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 169,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 169
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/TransactionSign.cpp",
+    "line": 682,
+    "token": "stTx->sign(pk, sk, signatureTarget)"
+   },
+   "exposure": "signing",
+   "handler_function": "doSign",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/SignHandler.cpp",
+    "line": 34
+   },
+   "max_api_version": null,
+   "method": "sign",
+   "min_api_version": null,
+   "primitives": [
+    "ed25519",
+    "secp256k1"
+   ],
+   "rationale": "sign calls transactionSign, which signs the transaction with the supplied secret key (and re-verifies the signature at construct time via checkValidity). Gated on canSign() (Config.h:365-367) for non-ADMIN callers.",
+   "recommendation": "hybrid",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 170,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 170
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "explicit",
+   "signature_operation": "create+verify",
+   "urgency": "HIGH",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/TransactionSign.cpp",
+    "line": 682,
+    "token": "stTx->sign(pk, sk, signatureTarget)"
+   },
+   "exposure": "signing",
+   "handler_function": "doSignFor",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/SignFor.cpp",
+    "line": 35
+   },
+   "max_api_version": null,
+   "method": "sign_for",
+   "min_api_version": null,
+   "primitives": [
+    "ed25519",
+    "secp256k1"
+   ],
+   "rationale": "sign_for calls transactionSignFor, which signs for a multi-signing account with the supplied secret key. Gated on canSign() for non-ADMIN callers.",
+   "recommendation": "hybrid",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 171,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 171
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "explicit",
+   "signature_operation": "create",
+   "urgency": "HIGH",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NEEDS_CURRENT_LEDGER",
+   "evidence": {
+    "file": "src/xrpld/rpc/handlers/Simulate.cpp",
+    "line": 229,
+    "token": "getTxQ().apply("
+   },
+   "exposure": "none",
+   "handler_function": "doSimulate",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/Simulate.cpp",
+    "line": 311
+   },
+   "max_api_version": null,
+   "method": "simulate",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "simulate rejects signed input and dry-runs via TxQ::apply; any signature verification is indirect, inside the apply pipeline, not in the handler.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 172,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 172
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "explicit",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 173,
+    "token": "\"stop\""
+   },
+   "exposure": "none",
+   "handler_function": "doStop",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/Stop.cpp",
+    "line": 32
+   },
+   "max_api_version": null,
+   "method": "stop",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 173,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 173
+   },
+   "registration_style": "handlerArray",
+   "role": "ADMIN",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NEEDS_CURRENT_LEDGER",
+   "evidence": {
+    "file": "src/libxrpl/protocol/STTx.cpp",
+    "line": 259,
+    "token": "STTx::checkSign("
+   },
+   "exposure": "signing",
+   "handler_function": "doSubmit",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/Submit.cpp",
+    "line": 45
+   },
+   "max_api_version": null,
+   "method": "submit",
+   "min_api_version": null,
+   "primitives": [
+    "ed25519",
+    "secp256k1"
+   ],
+   "rationale": "submit has two paths: with tx_blob it verifies the submitted signatures (STTx::checkSign); without it, it signs like sign \u2014 inline signing deprecated (Submit.cpp:67-71) and gated on canSign().",
+   "recommendation": "hybrid",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 174,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 174
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "explicit",
+   "signature_operation": "create+verify",
+   "urgency": "HIGH",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NEEDS_CURRENT_LEDGER",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/TransactionSign.cpp",
+    "line": 1282,
+    "token": "transactionSubmitMultiSigned("
+   },
+   "exposure": "signing",
+   "handler_function": "doSubmitMultiSigned",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/SubmitMultiSigned.cpp",
+    "line": 34
+   },
+   "max_api_version": null,
+   "method": "submit_multisigned",
+   "min_api_version": null,
+   "primitives": [
+    "ed25519",
+    "secp256k1"
+   ],
+   "rationale": "submit_multisigned accepts no secret key; it assembles a pre-signed multi-signed blob and verifies the signatures via transactionConstructImpl/checkValidity.",
+   "recommendation": "hybrid",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 178,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 175
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "explicit",
+   "signature_operation": "verify",
+   "urgency": "MEDIUM",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 198,
+    "token": "\"subscribe\""
+   },
+   "exposure": "none",
+   "handler_function": "doSubscribe",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/Subscribe.cpp",
+    "line": 38
+   },
+   "max_api_version": null,
+   "method": "subscribe",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 198,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 198
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/handlers/TransactionEntry.cpp",
+    "line": 79,
+    "token": "sttx->getTransactionID()"
+   },
+   "exposure": "none",
+   "handler_function": "doTransactionEntry",
+   "hash_data": true,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/TransactionEntry.cpp",
+    "line": 38
+   },
+   "max_api_version": null,
+   "method": "transaction_entry",
+   "min_api_version": null,
+   "primitives": [
+    "sha512-half"
+   ],
+   "rationale": "transaction_entry returns the transaction's ID (a sha512Half value) but computes no hash in the handler.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 179,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 179
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "explicit",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NEEDS_NETWORK_CONNECTION",
+   "evidence": {
+    "file": "src/xrpld/rpc/handlers/Tx.cpp",
+    "line": 52,
+    "token": "getHashBySeq(seq) == hash"
+   },
+   "exposure": "none",
+   "handler_function": "doTxJson",
+   "hash_data": true,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/Tx.cpp",
+    "line": 286
+   },
+   "max_api_version": null,
+   "method": "tx",
+   "min_api_version": null,
+   "primitives": [
+    "sha512-half"
+   ],
+   "rationale": "tx compares a requested transaction hash against the ledger's hash-by-sequence record but computes no hash in the handler.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 180,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 180
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "explicit",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-1",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 181,
+    "token": "\"tx_history\""
+   },
+   "exposure": "none",
+   "handler_function": "doTxHistory",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/TxHistory.cpp",
+    "line": 39
+   },
+   "max_api_version": 1,
+   "method": "tx_history",
+   "min_api_version": 1,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 181,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 181
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 182,
+    "token": "\"tx_reduce_relay\""
+   },
+   "exposure": "none",
+   "handler_function": "doTxReduceRelay",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/TxReduceRelay.cpp",
+    "line": 29
+   },
+   "max_api_version": null,
+   "method": "tx_reduce_relay",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 182,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 182
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 183,
+    "token": "\"unl_list\""
+   },
+   "exposure": "none",
+   "handler_function": "doUnlList",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/UnlList.cpp",
+    "line": 30
+   },
+   "max_api_version": null,
+   "method": "unl_list",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 183,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 183
+   },
+   "registration_style": "handlerArray",
+   "role": "ADMIN",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 199,
+    "token": "\"unsubscribe\""
+   },
+   "exposure": "none",
+   "handler_function": "doUnsubscribe",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/Unsubscribe.cpp",
+    "line": 33
+   },
+   "max_api_version": null,
+   "method": "unsubscribe",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 199,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 199
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/handlers/ValidationCreate.cpp",
+    "line": 54,
+    "token": "generateSecretKey(KeyType::secp256k1, *seed)"
+   },
+   "exposure": "key-exchange",
+   "handler_function": "doValidationCreate",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/ValidationCreate.cpp",
+    "line": 45
+   },
+   "max_api_version": null,
+   "method": "validation_create",
+   "min_api_version": null,
+   "primitives": [
+    "secp256k1"
+   ],
+   "rationale": "validation_create generates a secp256k1 validator key pair from a seed and returns the private key, seed and public key.",
+   "recommendation": "hybrid",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 187,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 184
+   },
+   "registration_style": "handlerArray",
+   "role": "ADMIN",
+   "rule": "explicit",
+   "signature_operation": null,
+   "urgency": "HIGH",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 193,
+    "token": "\"validator_info\""
+   },
+   "exposure": "none",
+   "handler_function": "doValidatorInfo",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/ValidatorInfo.cpp",
+    "line": 31
+   },
+   "max_api_version": null,
+   "method": "validator_info",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 193,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 193
+   },
+   "registration_style": "handlerArray",
+   "role": "ADMIN",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 189,
+    "token": "\"validator_list_sites\""
+   },
+   "exposure": "none",
+   "handler_function": "doValidatorListSites",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/ValidatorListSites.cpp",
+    "line": 29
+   },
+   "max_api_version": null,
+   "method": "validator_list_sites",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 192,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 189
+   },
+   "registration_style": "handlerArray",
+   "role": "ADMIN",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 194,
+    "token": "\"validator_votes\""
+   },
+   "exposure": "none",
+   "handler_function": "doValidatorVotes",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/ValidatorVotes.cpp",
+    "line": 46
+   },
+   "max_api_version": null,
+   "method": "validator_votes",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 194,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 194
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 188,
+    "token": "\"validators\""
+   },
+   "exposure": "none",
+   "handler_function": "doValidators",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/Validators.cpp",
+    "line": 29
+   },
+   "max_api_version": null,
+   "method": "validators",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 188,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 188
+   },
+   "registration_style": "handlerArray",
+   "role": "ADMIN",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "line": 195,
+    "token": "\"vault_info\""
+   },
+   "exposure": "none",
+   "handler_function": "doVaultInfo",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/VaultInfo.cpp",
+    "line": 79
+   },
+   "max_api_version": null,
+   "method": "vault_info",
+   "min_api_version": null,
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 195,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 195
+   },
+   "registration_style": "handlerArray",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "class_file": "src/xrpld/rpc/handlers/Version.h",
+   "class_name_line": 49,
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/handlers/Version.h",
+    "line": 49,
+    "token": "name = \"version\""
+   },
+   "exposure": "none",
+   "handler_function": "VersionHandler",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/Version.h",
+    "line": 28
+   },
+   "max_api_version": "RPC::apiMaximumValidVersion",
+   "method": "version",
+   "min_api_version": "RPC::apiMinimumSupportedVersion",
+   "primitives": [],
+   "rationale": "No signing, key-exchange or hashing operation in the handler implementation; registration site only.",
+   "recommendation": "no-change",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 249,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 249
+   },
+   "registration_style": "addHandler",
+   "role": "USER",
+   "rule": "default-none",
+   "signature_operation": null,
+   "urgency": "LOW",
+   "urgency_basis": "modelled"
+  },
+  {
+   "api_version_range": "1-3 (default)",
+   "condition": "NO_CONDITION",
+   "evidence": {
+    "file": "src/xrpld/rpc/handlers/WalletPropose.cpp",
+    "line": 136,
+    "token": "generateKeyPair(*keyType, *seed)"
+   },
+   "exposure": "key-exchange",
+   "handler_function": "doWalletPropose",
+   "hash_data": false,
+   "implementation": {
+    "file": "src/xrpld/rpc/handlers/WalletPropose.cpp",
+    "line": 68
+   },
+   "max_api_version": null,
+   "method": "wallet_propose",
+   "min_api_version": null,
+   "primitives": [
+    "ed25519",
+    "secp256k1"
+   ],
+   "rationale": "wallet_propose generates an Ed25519 (default secp256k1) account key pair from a seed or a fresh random seed and returns seed material.",
+   "recommendation": "hybrid",
+   "recommendation_basis": "modelled",
+   "registration": {
+    "end_line": 196,
+    "file": "src/xrpld/rpc/detail/Handler.cpp",
+    "start_line": 196
+   },
+   "registration_style": "handlerArray",
+   "role": "ADMIN",
+   "rule": "explicit",
+   "signature_operation": null,
+   "urgency": "HIGH",
+   "urgency_basis": "modelled"
+  }
+ ],
+ "pack": "Post-Quantum RPC and API Readiness Assessment",
+ "pinned_commit": "0085a1ff885d6a446369cf73a4430f75af22be55",
+ "source": "parsed from the pinned postfiatd source tree; no live node was run and no RPC call was made"
+}

@@ -1,0 +1,65 @@
+{
+ "checks": [
+  {
+   "check": "inventory: 74 methods (72 handlerArray + 2 addHandler), no duplicates, every registration site and implementation line names the method",
+   "detail": "74 methods, all sites verified",
+   "id": "A-01",
+   "pass": true
+  },
+  {
+   "check": "exposure 6/2/1/65, urgency 6/2/66, recommendation 8/66/0; all sum to 74 and match the matrix",
+   "detail": "exposure={'none': 65, 'signing': 6, 'hashing': 1, 'key-exchange': 2} urgency={'LOW': 66, 'HIGH': 6, 'MEDIUM': 2} recommendation={'no-change': 66, 'hybrid': 8}",
+   "id": "B-01",
+   "pass": true
+  },
+  {
+   "check": "every rule's evidence token sits at its recorded line; every default-none implementation is free of crypto tokens",
+   "detail": "22 explicit rules verified, 52 default-none implementations clean",
+   "id": "C-01",
+   "pass": true
+  },
+  {
+   "check": "readiness table: 7 families, status 2/1/3/1, every source anchor re-verified in range, PQ grep 0 hits",
+   "detail": "7 families; PQ terms checked: ML-KEM, ML-DSA, SLH-DSA, Kyber, Dilithium, SPHINCS, mlkem, mldsa, slhdsa",
+   "id": "D-01",
+   "pass": true
+  },
+  {
+   "check": "gRPC surface is 4 methods (GetLedger/GetLedgerEntry/GetLedgerData/GetLedgerDiff); declared-but-unregistered handlers are exactly doPause/doResume",
+   "detail": "grpc=4 unregistered=['doPause', 'doResume']",
+   "id": "E-01",
+   "pass": true
+  },
+  {
+   "check": "matrix lists reconcile with the inventory and readiness table; excerpt manifest, extracted files and source-hashes.json agree",
+   "detail": "41 excerpts, 27 source files in hashes",
+   "id": "F-01",
+   "pass": true
+  },
+  {
+   "check": "determinism: classifier re-run reproduces byte-identical inventory and matrix (full SHA-256)",
+   "detail": "inventory shipped=dc58e7d292360f9c3cc1c5384655e80253d349dc0b55dfe8a306d4d9a0745fe7 rerun=dc58e7d292360f9c3cc1c5384655e80253d349dc0b55dfe8a306d4d9a0745fe7; matrix shipped=7df4d889a99da50c42bee5f7c1ccb96018477d3245af5e6f3d5e070f5deae06c rerun=7df4d889a99da50c42bee5f7c1ccb96018477d3245af5e6f3d5e070f5deae06c",
+   "id": "G-01",
+   "pass": true
+  },
+  {
+   "check": "every excerpt file digest matches fixtures/source-hashes.json",
+   "detail": "41 excerpt digests verified",
+   "id": "H-01",
+   "pass": true
+  },
+  {
+   "check": "timing sanity: total probe elapsed_ms is non-negative (loose band, never exact)",
+   "detail": "value not recorded; never compared",
+   "id": "T-01",
+   "pass": true
+  }
+ ],
+ "inventory_file": "outputs/derived/method-inventory.json",
+ "inventory_sha256": "dc58e7d292360f9c3cc1c5384655e80253d349dc0b55dfe8a306d4d9a0745fe7",
+ "matrix_sha256": "7df4d889a99da50c42bee5f7c1ccb96018477d3245af5e6f3d5e070f5deae06c",
+ "pack": "Post-Quantum RPC and API Readiness Assessment",
+ "passed": 9,
+ "pinned_commit": "0085a1ff885d6a446369cf73a4430f75af22be55",
+ "total": 9
+}
